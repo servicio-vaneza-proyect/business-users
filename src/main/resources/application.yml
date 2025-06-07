@@ -1,10 +1,10 @@
 server:
-  port: ${PORT:0}
+  port: ${PORT:9002}
 spring:
   application:
     name: users-service
   r2dbc:
-    url: r2dbc:mariadb://localhost:${DB_PORT}/db_vaneza_proyect?serverTimezone=UTC
+    url: r2dbc:mariadb://localhost:${DB_PORT}/${DB_NAME}?serverTimezone=UTC
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
   sql:
