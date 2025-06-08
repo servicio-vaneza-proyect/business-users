@@ -20,4 +20,9 @@ public class UserRole {
 
   @Column("id_user")
   private Long idUser;
+
+  public UserRole(Long idRole, Long idUser) {
+    this.idRole = idRole;
+    this.idUser = idUser;
+  }
 }
